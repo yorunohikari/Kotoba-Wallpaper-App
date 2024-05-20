@@ -16,7 +16,7 @@ class WallpaperApp(QMainWindow):
         super().__init__()
         self.vocab_file = os.path.abspath("data/vocab.json")
         self.output_image = os.path.abspath("backgrounds/japstudy_bg.jpg")
-        self.interval = 3600  # default interval in seconds (1 hour)
+        self.interval = 900  # default interval in seconds (1 hour)
         self.text_color = "black"
         self.bg_color = "white"
         self.vocab_list = load_vocab_from_json(self.vocab_file)
@@ -40,15 +40,6 @@ class WallpaperApp(QMainWindow):
 
         self.countdown_label = QLabel('Next update in: 00:00:00', self)
         layout.addWidget(self.countdown_label)
-
-        self.interval_label = QLabel('Update Interval (seconds):', self)
-        layout.addWidget(self.interval_label)
-        
-        self.interval_spinbox = QSpinBox(self)
-        self.interval_spinbox.setMinimum(60)
-        self.interval_spinbox.setMaximum(86400)
-        self.interval_spinbox.setValue(self.interval)
-        layout.addWidget(self.interval_spinbox)
         
         self.text_color_button = QPushButton('Choose Text Color', self)
         self.text_color_button.clicked.connect(self.choose_text_color)
