@@ -3,12 +3,11 @@
 
 ## Overview
 
-The Kotoba Wallpaper App is a desktop application designed to help users study Japanese vocabulary. It periodically updates the desktop background with new vocabulary items, including kanji, readings, and meanings. Users can customize the update interval, text color, and background color.
+The Kotoba Wallpaper App is a desktop program designed to help users study Japanese vocabulary. It periodically updates the desktop background with new vocabulary items, including kanji, readings, and meanings. Users can customize the text color, and background color.
 
 ## Features
 
 - Periodic wallpaper updates with Japanese vocabulary.
-- Customizable update interval.
 - Customizable text and background colors.
 - Countdown timer for the next update.
 - Minimize to taskbar functionality with a tray icon.
@@ -97,7 +96,6 @@ The Kotoba Wallpaper App is a desktop application designed to help users study J
 ### Main Window
 
 - **Next update in:** Displays the countdown timer until the next wallpaper update.
-- **Update Interval (seconds):** Allows setting the interval between updates.
 - **Choose Text Color:** Opens a color picker to choose the text color.
 - **Choose Background Color:** Opens a color picker to choose the background color.
 - **Update Now:** Manually triggers an immediate wallpaper update.
@@ -140,7 +138,6 @@ Here’s an example of running the application:
    ```
 
 2. **Configure settings**:
-   - Adjust the update interval to your preference.
    - Choose your preferred text and background colors.
    - Use the "Update Now" button to immediately see the changes.
 
